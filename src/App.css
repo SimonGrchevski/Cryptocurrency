@@ -1,3 +1,9 @@
 h5 {
   font-size: 16px;
 }
+
+
+.cypto-value-wrapper {
+  background-color: red;
+  margin-bottom: 10px;
+}
