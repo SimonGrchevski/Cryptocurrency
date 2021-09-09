@@ -9,7 +9,6 @@ const Detail = (props) => {
   const { name, price_usd: price } = detail;
 
   return (
-
     <div>
       <CryptoValue name={name} price={price} />
       <CurrencyDetail detail={detail} />

@@ -7,8 +7,10 @@ const CurrencyDetail = (props) => {
     <li key={key}>
       <div className="currency-detail-wrapper">
         <div>
-          {key}
-          {' '}
+          <p className="crypto-name">
+            {key}
+            {' '}
+          </p>
         </div>
         <div>
           {value}
@@ -18,7 +20,7 @@ const CurrencyDetail = (props) => {
     </li>
   ));
   return (
-    <ul>
+    <ul className="currency-detail-ul">
       {details}
     </ul>
   );

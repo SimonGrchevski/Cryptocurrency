@@ -1,9 +1,41 @@
+
 h5 {
   font-size: 16px;
 }
 
-
 .cypto-value-wrapper {
   background-color: red;
   margin-bottom: 10px;
+}
+
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*  CURRENCY DETAILS */
+
+.currency-detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.currency-detail-ul {
+  padding: 0;
+  margin: 0;
+}
+
+.currency-detail-ul > li {
+  padding: 20px 0;
+  background-color: #0057ff;
+  color: #fff;
+}
+
+.currency-detail-ul li:nth-child(even) {
+  background-color: #0055ffe0;
+}
+
+.crypto-name {
+  text-transform: capitalize;
+  font-weight: bold;
 }

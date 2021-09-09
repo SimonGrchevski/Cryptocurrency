@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { useDispatch } from 'react-redux';
-import { Switch, Route, HashRouter as Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import MainPage from './Components/MainPage';
 import Details from './Components/Details';
 import Header from './Components/Header';
@@ -12,16 +12,17 @@ function App() {
   useEffect(() => {
     dispatch(loadCrypto());
   }, []);
+
   return (
     <div>
       <Header />
-      <Router basename="/">
+      <Router>
         <Switch>
           <Route exact path="/">
             <MainPage />
           </Route>
-          <Details />
         </Switch>
+        <Details />
       </Router>
 
     </div>
