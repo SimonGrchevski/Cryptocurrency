@@ -12,7 +12,7 @@ const Detail = (props) => {
   return (
     <div>
       <Header currentView={`${name} view`} />
-      <CryptoValue name={name} price={price} />
+      <CryptoValue name={name} price={price} classList="crypto-value-wrapper bg-blue" />
       <CurrencyDetail detail={detail} />
     </div>
   );

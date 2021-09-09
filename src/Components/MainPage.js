@@ -10,7 +10,7 @@ const MainPage = () => {
   const crypto = state.map((elem) => (
     <li key={elem.name}>
       <Link to={`/${elem.name}`}>
-        <CryptoValue name={elem.name} price={elem.price_usd} />
+        <CryptoValue name={elem.name} price={elem.price_usd} classList="crypto-value-wrapper crypto-main" />
       </Link>
     </li>
   ));
@@ -18,7 +18,8 @@ const MainPage = () => {
     <section>
       <Header currentView="Top ranked crypto values" />
       {/* <HighestJump /> */}
-      <ul>
+      <div className="stats-by"><p>Stats by rank</p></div>
+      <ul className="crypto-ul">
         {crypto}
       </ul>
     </section>

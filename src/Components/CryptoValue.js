@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import img from '../img.jpg';
 
 const CryptoValue = (props) => {
-  const { name, price } = props;
+  const { name, price, classList } = props;
   return (
-    <section className="crypto-value-wrapper">
+    <section className={classList}>
       <div className="image-wrapper">
         <img
           className="crypto-image"
@@ -15,12 +15,12 @@ const CryptoValue = (props) => {
         />
       </div>
       <div className="crypto-value">
-        <p className="txt-bold">
+        <h3 className="txt-bold crypto-value-name">
           {name}
           {' '}
-        </p>
+        </h3>
         <p>
-          {price}
+          {`${price} USD`}
           {' '}
         </p>
       </div>
@@ -31,6 +31,7 @@ const CryptoValue = (props) => {
 CryptoValue.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
+  classList: PropTypes.string.isRequired,
 };
 
 export default CryptoValue;

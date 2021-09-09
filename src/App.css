@@ -4,8 +4,18 @@ a {
   text-decoration: none;
 }
 
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .txt-bold {
   font-weight: bold;
+}
+
+.bg-blue { 
+  background-color: #0057ff;
 }
 /*  HEADER */
 .header {
@@ -28,6 +38,12 @@ a {
 .back-btn,
 .header-year {
   display: inline-block;
+}
+
+.stats-by {
+  background-color: #0057ff;
+  color: #fff;
+  padding:10px 4px;
 }
 
 /*  CURRENCY DETAILS */
@@ -56,22 +72,36 @@ a {
   font-weight: bold;
 }
 
+.crypto-value {
+  text-align: right;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.crypto-value-name{
+  font-size: 30px;
+}
+
 /*  CURRENCY VALUE WRAPPER */
 .crypto-value-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: #0057ff;
   margin-bottom: 20px;
-  align-items: center;
+  align-items: center; 
 }
 
-.crypto-value-wrapper > div {
+.crypto-value-wrapper > li {
   width: 50%;
-  height: 80%
+  height: 80%;
 }
 
 .crypto-value-wrapper > img {
   width: 20%;
+}
+
+.crypto-image {
+  width: 100%;
+  height: 100%;
 }
 
 .image-wrapper {
@@ -81,4 +111,27 @@ a {
 .crypto-value {
   text-align: right;
   color: #fff;
+}
+
+/*  CRYPTO VALUE */
+
+.crypto-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.crypto-ul > li {
+  width: 50%;
+  background-color: #0057ff;
+}
+
+.crypto-ul li:nth-child(odd) {
+  background-color: #0055ffe0;
+}
+
+.crypto-main {
+  flex-direction: column;
+}
+.crypto-main .image-wrapper {
+  width: 50%;
+  height: 50%;
 }
