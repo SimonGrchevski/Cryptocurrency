@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CryptoValue from './CryptoValue';
 import CurrencyDetail from './CurrencyDetail';
+import Header from './Header';
 
 const Detail = (props) => {
   const { detail } = props;
@@ -10,6 +11,7 @@ const Detail = (props) => {
 
   return (
     <div>
+      <Header currentView={`${name} view`} />
       <CryptoValue name={name} price={price} />
       <CurrencyDetail detail={detail} />
     </div>

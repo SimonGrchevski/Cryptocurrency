@@ -11,6 +11,23 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
+  background-color: #0055ffe0;
+  color: #fff;
+  align-items: center;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+}
+
+.back-btn{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.back-btn,
+.header-year {
+  display: inline-block;
 }
 
 /*  CURRENCY DETAILS */
