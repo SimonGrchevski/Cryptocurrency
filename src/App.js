@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { useDispatch } from 'react-redux';
+import { Switch, Route, HashRouter as Router } from 'react-router-dom';
 import MainPage from './Components/MainPage';
 import Details from './Components/Details';
 import Header from './Components/Header';
@@ -14,8 +15,15 @@ function App() {
   return (
     <div>
       <Header />
-      <MainPage />
-      <Details />
+      <Router basename="/">
+        <Switch>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Details />
+        </Switch>
+      </Router>
+
     </div>
   );
 }

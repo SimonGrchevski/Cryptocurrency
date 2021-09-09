@@ -29,7 +29,7 @@ const CryptoValue = (props) => {
 
 CryptoValue.propTypes = {
   name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.string.isRequired,
 };
 
 export default CryptoValue;
