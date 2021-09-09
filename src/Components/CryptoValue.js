@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import img from '../img.jpg';
 
 const CryptoValue = (props) => {
   const { name, price } = props;
   return (
-    <section className="flex cypto-value-wrapper">
-      <div>
+    <section className="crypto-value-wrapper">
+      <div className="image-wrapper">
         <img
           className="crypto-image"
-          src=""
+          src={img}
           alt="
               a crypto value"
         />
       </div>
       <div className="crypto-value">
-        <p>
+        <p className="txt-bold">
           {name}
           {' '}
         </p>

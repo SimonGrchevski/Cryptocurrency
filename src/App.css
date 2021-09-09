@@ -1,17 +1,16 @@
-
-h5 {
-  font-size: 16px;
-}
-
-.cypto-value-wrapper {
-  background-color: red;
-  margin-bottom: 10px;
-}
-
 li,
 a {
   list-style-type: none;
   text-decoration: none;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+/*  HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*  CURRENCY DETAILS */
@@ -38,4 +37,31 @@ a {
 .crypto-name {
   text-transform: capitalize;
   font-weight: bold;
+}
+
+/*  CURRENCY VALUE WRAPPER */
+.crypto-value-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0057ff;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.crypto-value-wrapper > div {
+  width: 50%;
+  height: 80%
+}
+
+.crypto-value-wrapper > img {
+  width: 20%;
+}
+
+.image-wrapper {
+  text-align: left;
+}
+
+.crypto-value {
+  text-align: right;
+  color: #fff;
 }

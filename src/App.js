@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import MainPage from './Components/MainPage';
 import Details from './Components/Details';
-import Header from './Components/Header';
 import { loadCrypto } from './redux/reducers/cryptoReducers';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
 
   return (
     <div>
-      <Header />
       <Router>
         <Switch>
           <Route exact path="/">
@@ -24,7 +22,6 @@ function App() {
         </Switch>
         <Details />
       </Router>
-
     </div>
   );
 }

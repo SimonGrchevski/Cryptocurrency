@@ -1,8 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import CryptoValue from './CryptoValue';
-import HighestJump from './HighestJump';
+// import HighestJump from './HighestJump';
+import Header from './Header';
 
 const MainPage = () => {
   const state = useSelector((state) => state.value);
@@ -15,12 +16,11 @@ const MainPage = () => {
   ));
   return (
     <section>
-      <HighestJump />
-      <Router>
-        <ul>
-          {crypto}
-        </ul>
-      </Router>
+      <Header currentView="Top ranked crypto values" />
+      {/* <HighestJump /> */}
+      <ul>
+        {crypto}
+      </ul>
     </section>
   );
 };
