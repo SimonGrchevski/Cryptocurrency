@@ -17,6 +17,11 @@ p {
 .bg-blue { 
   background-color: #0057ff;
 }
+
+.bg-dark-blue {
+  background-color: #0055ffe0;
+}
+
 /*  HEADER */
 .header {
   display: flex;
@@ -121,11 +126,6 @@ p {
 }
 .crypto-ul > li {
   width: 50%;
-  background-color: #0057ff;
-}
-
-.crypto-ul li:nth-child(odd) {
-  background-color: #0055ffe0;
 }
 
 .crypto-main {
