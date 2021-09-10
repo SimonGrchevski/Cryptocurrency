@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 li,
 a {
   list-style-type: none;
@@ -25,7 +26,7 @@ p {
   font-weight: bold;
 }
 
-.bg-blue { 
+.bg-blue {
   background-color: #0057ff;
 }
 
@@ -53,10 +54,11 @@ p {
   cursor: pointer;
 }
 
-.back-btn{
+.back-btn {
   margin-right: 10px;
   cursor: pointer;
 }
+
 .back-btn,
 .header-year {
   display: inline-block;
@@ -65,7 +67,7 @@ p {
 .stats-by {
   background-color: #0057ff;
   color: #fff;
-  padding:10px 4px;
+  padding: 10px 4px;
 }
 
 /*  CURRENCY DETAILS */
@@ -74,6 +76,7 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 .currency-detail-ul {
   padding: 0;
   margin: 0;
@@ -100,7 +103,7 @@ p {
   padding-right: 30px;
 }
 
-.crypto-value-name{
+.crypto-value-name {
   font-size: 30px;
 }
 
@@ -108,7 +111,7 @@ p {
 .crypto-value-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .crypto-value-wrapper > li {
@@ -140,6 +143,7 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+
 .crypto-ul > li {
   width: 50%;
 }
@@ -147,6 +151,7 @@ p {
 .crypto-main {
   flex-direction: column;
 }
+
 .crypto-main .image-wrapper {
   width: 50%;
   height: 50%;
@@ -165,7 +170,7 @@ p {
   box-sizing: border-box;
 }
 
-.highest-jump > div{
+.highest-jump > div {
   width: 50%;
 }
 
