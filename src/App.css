@@ -88,10 +88,6 @@ p {
   color: #fff;
 }
 
-.currency-detail-ul li:nth-child(even) {
-  background-color: #0055ffe0;
-}
-
 .crypto-name {
   text-transform: capitalize;
   font-weight: bold;
@@ -101,6 +97,7 @@ p {
   text-align: right;
   width: 100%;
   padding-right: 30px;
+  color: #fff;
 }
 
 .crypto-value-name {
@@ -119,6 +116,14 @@ p {
   height: 80%;
 }
 
+.crypto-ul > li {
+  width: 50%;
+}
+
+.currency-detail-ul li:nth-child(even) {
+  background-color: #0055ffe0;
+}
+
 .crypto-value-wrapper > img {
   width: 20%;
 }
@@ -132,20 +137,11 @@ p {
   text-align: left;
 }
 
-.crypto-value {
-  text-align: right;
-  color: #fff;
-}
-
 /*  CRYPTO VALUE */
 
 .crypto-ul {
   display: flex;
   flex-wrap: wrap;
-}
-
-.crypto-ul > li {
-  width: 50%;
 }
 
 .crypto-main {
