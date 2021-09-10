@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 import CryptoValue from './CryptoValue';
 // import HighestJump from './HighestJump';
 import Header from './Header';
+import Breakdown from './Breakdown';
 
 const MainPage = () => {
   const state = useSelector((state) => state.value);
+  const highest = [...state].sort((a, b) => +b.percent_change_24h - +a.percent_change_24h)[0];
+  console.log(highest);
+  // UGLY CODE INCOMING!
   let rows = 0;
   let col = 0;
   const crypto = state.map((elem) => {
@@ -18,6 +22,7 @@ const MainPage = () => {
     if ((rows + col) % 2 === 0) cl = 'crypto-value-wrapper crypto-main bg-blue';
     else cl = 'crypto-value-wrapper crypto-main bg-dark-blue';
     col += 1;
+    // NOT DEAD YET?
     return (
       <li key={elem.name}>
         <Link to={`/${elem.name}`}>
@@ -30,7 +35,7 @@ const MainPage = () => {
     <section>
       <Header currentView="Top ranked crypto values" />
       {/* <HighestJump /> */}
-      <div className="stats-by"><p>Stats by rank</p></div>
+      <Breakdown text="Stats by rank" />
       <ul className="crypto-ul">
         {crypto}
       </ul>

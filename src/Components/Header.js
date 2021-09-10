@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SettingsIcon from '@material-ui/icons/Settings';
 import MicIcon from '@material-ui/icons/Mic';
-import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { useHistory } from 'react-router';
 
 const Header = (props) => {
@@ -27,7 +27,7 @@ const Header = (props) => {
           onKeyPress={(e) => handleKey(e)}
           tabIndex="0"
         >
-          <KeyboardBackspaceIcon />
+          <ArrowBackIosIcon />
         </div>
         <div className="header-year"><p>2021</p></div>
       </div>

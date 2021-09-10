@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import CryptoValue from './CryptoValue';
 import CurrencyDetail from './CurrencyDetail';
 import Header from './Header';
+import Breakdown from './Breakdown';
 
 const Detail = (props) => {
   const { detail } = props;
@@ -13,6 +14,7 @@ const Detail = (props) => {
     <div>
       <Header currentView={`${name} view`} />
       <CryptoValue name={name} price={price} classList="crypto-value-wrapper bg-blue" />
+      <Breakdown text={`${name} breakdown`} />
       <CurrencyDetail detail={detail} />
     </div>
   );
