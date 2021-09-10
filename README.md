@@ -1,44 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Cryptocurrency
 
-## Available Scripts
+![screenshot](./sc.png)
 
-In the project directory, you can run:
+![screenshot](./sc2.png)
 
-### `npm start`
+![screenshot](./sc3.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Cryptocurrency is an webapp that is displaying a current ranking list of the crypto values. You can also click on a value do see more details about it.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Live demo
 
-### `npm test`
+[See Project](https://simongrchevski.github.io/Cryptocurrency/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Built With
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Javascript
+- CSS
+- React and Redux
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**To get the local copy of the project up and running you will need to run the following commands on your terminal:**
 
-### `npm run eject`
+- `git@github.com:SimonGrchevski/Cryptocurrency.git`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+And then In your terminal run :
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `cd Cryptocurrency`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To install all the available dependecies run:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `npm install`
 
-## Learn More
+To run this application locally :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
+
+👤 Simon Grchevski
+
+- GitHub: [Github](https://github.com/SimonGrchevski)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/simon-grchevski-682935209/)
+- Twitter: [Twitter](https://twitter.com/grchevski)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
