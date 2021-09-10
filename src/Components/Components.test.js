@@ -1,12 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react'
-import App from '../App';
+import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import store from '../redux/configureStore';
 import userEvent from '@testing-library/user-event';
+import App from '../App';
+import store from '../redux/configureStore';
 
-describe("Homepage tests", () => {
-  test('Bitcoin display', async() => {
+describe('Homepage tests', () => {
+  test('Bitcoin display', async () => {
     render(<Provider store={store}><App /></Provider>);
     expect(await screen.findByText('Bitcoin')).toBeInTheDocument();
   });
@@ -33,18 +33,17 @@ describe("Homepage tests", () => {
 
   test('Highest jump display', async () => {
     render(<Provider store={store}><App /></Provider>);
-    expect(await screen.findByText('Highest jump of the day')).toBeInTheDocument()
+    expect(await screen.findByText('Highest jump of the day')).toBeInTheDocument();
   });
+});
 
-})
-
-describe("Crypto and back button click", () => {
+describe('Crypto and back button click', () => {
   test('Bitcoin click', async () => {
     render(<Provider store={store}><App /></Provider>);
     userEvent.click(await screen.findByText('Bitcoin'));
     expect(await screen.findByText('BTC')).toBeInTheDocument();
   });
-  
+
   test('Ethereum click', async () => {
     render(<Provider store={store}><App /></Provider>);
     userEvent.click(screen.getByRole('button'));
@@ -76,4 +75,4 @@ describe("Crypto and back button click", () => {
     expect(await screen.findByText('USDT')).toBeInTheDocument();
     expect(await screen.findByText('Tether view')).toBeInTheDocument();
   });
-})
+});
