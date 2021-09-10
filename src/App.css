@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 li,
 a {
   list-style-type: none;
@@ -152,4 +155,26 @@ p {
 .breakdown {
   color: white;
   padding: 10px;
+}
+
+.highest-jump {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.highest-jump > div{
+  width: 50%;
+}
+
+.highest-img {
+  width: 100%;
+  opacity: 0.6;
+}
+
+.highest-info {
+  text-align: right;
+  padding-right: 5px;
 }
