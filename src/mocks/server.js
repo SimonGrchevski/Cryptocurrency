@@ -1,3 +1,4 @@
+/* eslint import/no-extraneous-dependencies:off */
 import { setupServer } from 'msw/node';
 import handlers from './handlers';
 

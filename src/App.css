@@ -75,6 +75,7 @@ p {
 .currency-detail-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
 .currency-detail-ul {
@@ -178,4 +179,19 @@ p {
 .highest-info {
   text-align: right;
   padding-right: 5px;
+}
+
+.top-rank-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rank {
+  padding: 5px;
+  width:200px;
+  border:none;
+  outline: none;
+  background-color: #0057ff;
+  color: #fff;
+  font-weight: bold;
 }

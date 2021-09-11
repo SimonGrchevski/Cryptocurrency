@@ -1,10 +1,10 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CryptoValue from './CryptoValue';
 import HighestJump from './HighestJump';
 import Header from './Header';
-import Breakdown from './Breakdown';
+import { loadCrypto } from '../redux/reducers/cryptoReducers';
 
 const getHighest = (state) => {
   if (state.length) {
@@ -22,8 +22,14 @@ const getHighest = (state) => {
   return <></>;
 };
 
+const handleChange = (limit, dispatch) => {
+  dispatch(loadCrypto(limit));
+  document.querySelector('.rankedBy').innerHTML = `Top ${limit} rank: `;
+};
+
 const MainPage = () => {
   const state = useSelector((state) => state.value);
+  const dispatch = useDispatch();
   // UGLY CODE INCOMING!
   let rows = 0;
   let col = 0;
@@ -50,7 +56,25 @@ const MainPage = () => {
     <section>
       <Header currentView="Top ranked crypto values" />
       {getHighest(state)}
-      <Breakdown text="Stats by rank" />
+      <div className="breakdown bg-dark-blue top-rank-wrapper">
+        <div>
+          <p className="rankedBy">Top 10 rank: </p>
+        </div>
+        <div>
+          <select
+            className="rank"
+            onChange={(e) => handleChange(e.target.value, dispatch)}
+          >
+            <option value="10">top 10</option>
+            <option value="20">top 20</option>
+            <option value="30">top 30</option>
+            <option value="40">top 40</option>
+            <option value="50">top 50</option>
+            <option value="100">top 100</option>
+          </select>
+        </div>
+      </div>
+
       <ul className="crypto-ul">
         {crypto}
       </ul>

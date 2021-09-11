@@ -2,8 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 
 const loadCrypto = createAsyncThunk('fetchData',
-  async () => {
-    const result = await fetch('https://api.coinlore.net/api/tickers/?start=0&limit=10', { method: 'GET' });
+  async (top) => {
+    const result = await fetch(`https://api.coinlore.net/api/tickers/?start=0&limit=${top}`, { method: 'GET' });
     const res = await result.json();
     return res.data;
   });
